@@ -17,7 +17,63 @@
       "responses": [
         {
           "uuid": "ba20ec81-7239-4d9d-9557-715bee45a753",
-          "body": "[\n    { title: \"Visit Ann\" },\n    { title: \"Call Dad\" },\n    { title: \"Go to gym\" },\n    { title: \"Wash the dishes\" },\n    { title: \"Shop for the party\" }\n]",
+          "body": "[\n    { \"title\": \"Visit Ann\" },\n    { \"title\": \"Call Dad\" },\n    { \"title\": \"Go to gym\" },\n    { \"title\": \"Wash the dishes\" },\n    { \"title\": \"Shop for the party\" }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "7ceed378-1a2b-49a6-a092-a72fc9a90223",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "tasks",
+      "responses": [
+        {
+          "uuid": "a6965aa6-6d65-4a99-b29a-27b753ee248f",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "25cf44d2-b183-49ed-a944-d29b38e6010a",
+      "type": "http",
+      "documentation": "",
+      "method": "delete",
+      "endpoint": "tasks/:title",
+      "responses": [
+        {
+          "uuid": "9a8e21ac-6d73-4df8-8f09-8e362f627c93",
+          "body": "{}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -41,6 +97,14 @@
     {
       "type": "route",
       "uuid": "a87662ff-26b7-4ade-a173-02d538aeae3c"
+    },
+    {
+      "type": "route",
+      "uuid": "7ceed378-1a2b-49a6-a092-a72fc9a90223"
+    },
+    {
+      "type": "route",
+      "uuid": "25cf44d2-b183-49ed-a944-d29b38e6010a"
     }
   ],
   "proxyMode": false,
@@ -60,6 +124,18 @@
     {
       "key": "Content-Type",
       "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
     }
   ],
   "proxyReqHeaders": [
