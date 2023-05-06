@@ -1,50 +1,22 @@
 {
-  "uuid": "f89223c2-bd21-4c74-a912-9355894c46c4",
+  "uuid": "982c5fe4-451c-4809-8875-a70a42a1c141",
   "lastMigration": 27,
-  "name": "Task api mocks",
+  "name": "Log api mocks",
   "endpointPrefix": "",
   "latency": 0,
-  "port": 3001,
+  "port": 3002,
   "hostname": "",
   "folders": [],
   "routes": [
     {
-      "uuid": "a87662ff-26b7-4ade-a173-02d538aeae3c",
+      "uuid": "19049d78-68a1-43a2-b053-9b197b0e1122",
       "type": "http",
       "documentation": "",
       "method": "get",
-      "endpoint": "tasks/:date",
+      "endpoint": "",
       "responses": [
         {
-          "uuid": "ba20ec81-7239-4d9d-9557-715bee45a753",
-          "body": "[\n    { \"title\": \"Visit Ann\" },\n    { \"title\": \"Call Dad\" },\n    { \"title\": \"Go to gym\" },\n    { \"title\": \"Wash the dishes\" },\n    { \"title\": \"Shop for the party\" }\n]",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "",
-          "headers": [],
-          "bodyType": "INLINE",
-          "filePath": "",
-          "databucketID": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": true
-        }
-      ],
-      "enabled": true,
-      "responseMode": null
-    },
-    {
-      "uuid": "7ceed378-1a2b-49a6-a092-a72fc9a90223",
-      "type": "http",
-      "documentation": "",
-      "method": "post",
-      "endpoint": "tasks/:date",
-      "responses": [
-        {
-          "uuid": "a6965aa6-6d65-4a99-b29a-27b753ee248f",
+          "uuid": "f5cebaf1-d1a2-48bf-94d2-347d2e9f21fd",
           "body": "{}",
           "latency": 0,
           "statusCode": 200,
@@ -65,14 +37,14 @@
       "responseMode": null
     },
     {
-      "uuid": "25cf44d2-b183-49ed-a944-d29b38e6010a",
+      "uuid": "61cdeb28-f148-4d13-bab3-c89f46ec6e4c",
       "type": "http",
       "documentation": "",
-      "method": "delete",
-      "endpoint": "tasks/:date/:title",
+      "method": "post",
+      "endpoint": "errors",
       "responses": [
         {
-          "uuid": "9a8e21ac-6d73-4df8-8f09-8e362f627c93",
+          "uuid": "63a09ffe-8847-45a6-b602-fbab632952e6",
           "body": "{}",
           "latency": 0,
           "statusCode": 200,
@@ -96,15 +68,11 @@
   "rootChildren": [
     {
       "type": "route",
-      "uuid": "a87662ff-26b7-4ade-a173-02d538aeae3c"
+      "uuid": "19049d78-68a1-43a2-b053-9b197b0e1122"
     },
     {
       "type": "route",
-      "uuid": "7ceed378-1a2b-49a6-a092-a72fc9a90223"
-    },
-    {
-      "type": "route",
-      "uuid": "25cf44d2-b183-49ed-a944-d29b38e6010a"
+      "uuid": "61cdeb28-f148-4d13-bab3-c89f46ec6e4c"
     }
   ],
   "proxyMode": false,

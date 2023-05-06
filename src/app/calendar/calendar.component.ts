@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
 })
 export class CalendarComponent {
 
+  constructor() { }
+
+  ngOnInit(): void {
+    throw new Error("Failed to load the calendar. (testing error)")
+  }
   selectedDate = new Date();
 }
